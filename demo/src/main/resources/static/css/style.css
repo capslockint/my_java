@@ -1,0 +1,30 @@
+h4 {
+   color: red;
+}
+*{
+	margin:0;
+	padding:0;
+}
+
+.head{
+	background-color: black;
+	color: white;
+	display: flex;
+}
+.head>p{
+	margin: 10px 30px;
+}
+
+footer{
+	background-color: black;
+	color: red;
+	display : flex;
+	margin: 300px 0px;
+	height: 30px;
+}
+
+
+#drop{
+	display: none;
+	margin-top: -500px;
+}

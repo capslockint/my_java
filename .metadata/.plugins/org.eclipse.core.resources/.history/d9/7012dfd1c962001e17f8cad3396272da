@@ -1,0 +1,22 @@
+package com.springrest.controller;
+
+import java.util.List;
+
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.springrest.entities.Course;
+
+@RestController
+public class MyController {
+	@GetMapping("/home")
+	public String home() {
+		return"this is home page";
+	}
+	
+	@GetMapping("/courses")
+	public List<Course> getCourse(){
+		
+	}
+ 
+}

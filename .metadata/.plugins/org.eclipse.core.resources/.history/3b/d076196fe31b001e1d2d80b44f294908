@@ -1,0 +1,27 @@
+package com.example.demo;
+
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RestController;
+import org.springframework.jdbc.core.JdbcTemplate;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.CommandLineRunner;
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
+
+@RestController
+public class hello_controler {
+	@GetMapping(path = "/")
+public String hello()
+{
+	return "hello world";
+	
+}
+
+}
+
+@Override
+public void run(hello_controller) throws Exception {
+     
+    jdbcTemplate.execute("create table employees (id int primary key "
+            + "auto_increment, name varchar(30), email varchar(30))");
+}

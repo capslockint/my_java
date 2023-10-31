@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta charset = "ISO-8859-1" />
+      <link href = "css/style.css" rel = "styleheet"/>
+      <title>Spring Boot Application</title>
+   </head>
+   <body>
+	   <nav>
+		   <header>
+		   <div class="head">
+			   <p>Home</p>
+		   </div>
+		   </header>
+	   </nav>
+      <h4>Welcome to My Thymeleaf Spring Boot web application</h4>
+      <div class="box">
+      <div class="layout">
+		  <h3>Hamza</h3>
+		  <p>hamzaalvi754@gmail.com</p>
+		  <button onclick="funct()">Click</button>
+	  </div>
+	  </div>
+      <nav>
+      <footer>
+		  <div class="footer">
+			  <p>Back</p>
+		  </div>
+	  </footer>
+	  </nav>
+	  
+	  <nav id="drop">
+		   <header>
+		   <div class="head">
+			   <p>Home</p>
+			   <p>Blog</p>
+			   <p>More</p>
+		   </div>
+		   </header>
+	   </nav>
+	   
+   </body>
+   <script>
+	    let b="true";
+	   funct=()=>{
+		   if(b=="true"){
+		   let d=document.getElementById('drop');
+		   d.style.display="block"
+		   b="false"
+		   }
+		   else if(b=="false"){
+			   let d=document.getElementById('drop');
+		   d.style.display="none"
+		   b="true"
+		   }
+	   }
+   </script>
+</html>
+

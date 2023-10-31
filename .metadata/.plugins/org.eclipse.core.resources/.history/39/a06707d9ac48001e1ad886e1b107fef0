@@ -1,0 +1,7 @@
+package com.example.demo.rest;
+
+@Restcontroller
+public class RestController {
+	// expose "/" that return "hello world"
+
+}

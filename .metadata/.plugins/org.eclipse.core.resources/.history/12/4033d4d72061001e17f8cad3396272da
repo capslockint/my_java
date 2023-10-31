@@ -1,0 +1,12 @@
+package com.hamza.dao;
+
+import org.springframework.stereotype.Repository;
+
+import com.hamza.entity.Student;
+
+@Repository
+public interface StudentDAO {
+	
+	void save(Student theStudent);
+
+}

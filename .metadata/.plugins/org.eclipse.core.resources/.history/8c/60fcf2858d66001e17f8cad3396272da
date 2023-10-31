@@ -1,0 +1,5 @@
+package com.hamza.springrest.demo.rest;
+
+public class EmployeeRestController {
+
+}

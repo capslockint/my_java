@@ -1,0 +1,9 @@
+package com.hamza.dao;
+
+import com.hamza.entity.Student;
+
+public interface StudentDAO {
+	
+	void save(Student theStudent);
+
+}

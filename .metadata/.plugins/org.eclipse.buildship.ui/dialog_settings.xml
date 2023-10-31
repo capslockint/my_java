@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="org.eclipse.buildship.ui.wizard.project.import">
+	</section>
+	<section name="org.eclipse.buildship.ui.wizard.project.creation">
+		<item key="project_location" value="C:\Users\hamza.alvi\Documents\workspace-spring-tool-suite-4-4.19.0.RELEASE\damo-12"/>
+		<item key="use_default_location" value="true"/>
+	</section>
+</section>

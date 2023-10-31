@@ -1,0 +1,46 @@
+package com.hamza.demo;
+
+import org.springframework.boot.CommandLineRunner;
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.context.annotation.Bean;
+
+import com.hamza.dao.StudentDAO;
+import com.hamza.dao.StudentDAOImpl;
+import com.hamza.entity.Student;
+
+@SpringBootApplication
+public class Demo32Application {
+
+	public static void main(String[] args) {
+		SpringApplication.run(Demo32Application.class, args);
+	}
+
+	private String firstName;
+	private String lastName;
+	private String email;
+		
+		@Bean
+		public CommandLineRunner commandlinerunner(StudentDAO studentDAO)
+		{
+			return runner ->{
+				creatStudent(studentDAO);
+			};
+	}
+        @Bean
+		private void creatStudent(StudentDAO studentDAO) {
+	    // create student object
+			System.out.println("creating new student object.....");
+			Student tempStudent = new Student( "hamza", "alvi","hamzaalvi@754");
+		// save the student object
+			System.out.println("saving the studenet...."); 
+			studentDAO.save(tempStudent);
+
+	    // display id of the new student
+			System.out.println("saved student. generated id:" + tempStudent.getId());
+			
+			 
+			
+		}
+
+}
